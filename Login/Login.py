@@ -9,7 +9,9 @@ driver.get('http://chat.shopee.com/#/dashboard')
 driver.find_element_by_xpath('//*[@id="app"]/div/form/div[3]/div/button').click()
 driver.find_element_by_xpath('//*[@id="app"]/div/form/div[3]/div/button').send_keys('123')
 '''
-
+driver.find_element_by_xpath('//*[@id="app"]/div/form/div[1]/div/div[1]/input').clear()
+driver.find_element_by_xpath('//*[@id="app"]/div/form/div[2]/div/div[1]/input').clear()
+driver.implicitly_wait(1)
 driver.find_element_by_xpath('//*[@id="app"]/div/form/div[1]/div/div[1]/input').click()
 driver.find_element_by_xpath('//*[@id="app"]/div/form/div[1]/div/div[1]/input').send_keys('chenxinmeng')
 driver.implicitly_wait(1)
@@ -18,5 +20,8 @@ driver.find_element_by_xpath('//*[@id="app"]/div/form/div[2]/div/div[1]/input').
 driver.implicitly_wait(1)
 driver.find_element_by_xpath('//*[@id="app"]/div/form/div[3]/div/button').click()
 driver.implicitly_wait(1)
-driver.find_element_by_xpath('//*[@id="dropdown-menu-5602"]/li/span').click()
+driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div[1]/form/div[1]/div/div/input').clear()
+driver.implicitly_wait(1)
+driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div[1]/form/div[1]/div/div/input').click()
+driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div[1]/form/div[1]/div/div/input').send_keys('开发')
 
