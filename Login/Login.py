@@ -22,7 +22,5 @@ driver.find_element_by_xpath('//*[@id="app"]/div/form/div[3]/div/button').click(
 driver.implicitly_wait(1)
 driver.find_element_by_xpath('//*[@id="app"]/div/div[1]/div[2]/div[1]/div/ul/div[3]/li/div/span').click()
 driver.implicitly_wait(1)
-driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[2]/div[1]/div/ul/div[3]/li/ul/div[2]/a/li').click()
-
-
+driver.find_element_by_xpath('//*[@id="app"]/div/div[1]/div[2]/div[1]/div/ul/div[3]/li/ul/div[2]/a/li').click()
 
