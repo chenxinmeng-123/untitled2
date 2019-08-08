@@ -33,6 +33,7 @@ driver.implicitly_wait(1)
 driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div[1]/form/div[1]/div/div/input').send_keys('开发')
 driver.implicitly_wait(1)
 driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div[1]/form/div[3]/div/button[1]/span').click()
+driver.implicitly_wait(1)
 driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div[1]/form/div[3]/div/button[2]/span').clear()
 
 
