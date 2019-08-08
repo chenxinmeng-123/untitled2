@@ -9,6 +9,7 @@ driver.get('http://chat.shopee.com/#/dashboard')
 driver.find_element_by_xpath('//*[@id="app"]/div/form/div[3]/div/button').click()
 driver.find_element_by_xpath('//*[@id="app"]/div/form/div[3]/div/button').send_keys('123')
 '''
+#登录
 driver.find_element_by_xpath('//*[@id="app"]/div/form/div[1]/div/div[1]/input').clear()
 driver.find_element_by_xpath('//*[@id="app"]/div/form/div[2]/div/div[1]/input').clear()
 driver.implicitly_wait(1)
@@ -20,15 +21,18 @@ driver.find_element_by_xpath('//*[@id="app"]/div/form/div[2]/div/div[1]/input').
 driver.implicitly_wait(1)
 driver.find_element_by_xpath('//*[@id="app"]/div/form/div[3]/div/button').click()
 driver.implicitly_wait(1)
+#用户管理
 driver.find_element_by_xpath('//*[@id="app"]/div/div[1]/div[2]/div[1]/div/ul/div[3]/li/div/span').click()
 driver.implicitly_wait(1)
+#角色管理
 driver.find_element_by_xpath('//*[@id="app"]/div/div[1]/div[2]/div[1]/div/ul/div[3]/li/ul/div[2]/a/li').click()
 driver.implicitly_wait(1)
+#角色名称搜索并清空
 driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div[1]/form/div[1]/div/div/input').click()
 driver.implicitly_wait(1)
 driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div[1]/form/div[1]/div/div/input').send_keys('开发')
 driver.implicitly_wait(1)
 driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div[1]/form/div[3]/div/button[1]/span').click()
+driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div[1]/form/div[3]/div/button[2]/span').clear()
 
-#driver.quit()
 
